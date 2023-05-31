@@ -402,6 +402,7 @@ pub async fn publish_wit(
 
     let mut info = PublishInfo {
         package: options.name.to_string(),
+        head: None,
         entries: Default::default(),
     };
 
@@ -523,6 +524,7 @@ pub async fn publish(
 
     let mut info = PublishInfo {
         package: options.name.to_string(),
+        head: None,
         entries: Default::default(),
     };
 
